@@ -1,6 +1,3 @@
-import Rating from '@mui/material/Rating';
-import Slider from "react-slick";
-
 import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import { Navigation } from 'swiper/modules';
