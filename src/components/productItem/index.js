@@ -16,7 +16,7 @@ const ProductItem = () => {
     <Slider {...productSliderOptions}>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -37,7 +37,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -58,7 +58,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -79,7 +79,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -100,7 +100,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -121,7 +121,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -142,7 +142,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -163,7 +163,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
@@ -184,7 +184,7 @@ const ProductItem = () => {
         </div>
         <div className="item productItem">
             <div className="imgWrapper">
-                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" className="w-100" />
+                <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                 <span className="badge badge-primary">28%</span>
                 <div className="actionsquickView">
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>

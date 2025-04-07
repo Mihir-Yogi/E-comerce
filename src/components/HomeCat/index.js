@@ -46,7 +46,7 @@ const HomeCat = () => {
                         return (
                             <SwiperSlide>
                                 <div className="item text-center cursor" style={{background: itemBg}}>
-                                    <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png'/>
+                                    <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt='IMAGE'/>
                                     <h4>Item</h4>
                                     <p>10 Products</p>
                                 </div>

@@ -16,7 +16,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-md-3 ps-md-4">
                         <div className="banner">
-                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" className="img-fluid w-100 cursor" />
+                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" alt='IMAGE' className="img-fluid w-100 cursor" />
                         </div>
                     </div>
                     <div className="col-md-9 ps-md-4">
