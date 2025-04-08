@@ -13,11 +13,11 @@ const Navigation = () => {
           <ul className="list list-inline mb-0">
             {/* NEW DROPS with Animated Dropdown */}
             <li
-              className="list-inline-item mx-3 nav-item position-relative"
+              className="list-inline-item mx-3 nav-item position-relative "
               onMouseEnter={() => setDropdownOpen(true)}
             >
-              <Link to="/">
-                <Sparkles size={16} /> New Drops  <ChevronDown size={16} />
+              <Link to="/" className="d-flex align-items-center">
+                <Sparkles size={16} className='mr-1'/> New Drops  <ChevronDown size={16} />
               </Link>
 
               <AnimatePresence>
@@ -47,16 +47,16 @@ const Navigation = () => {
 
             {/* Other Static Links */}
             <li className="list-inline-item mx-3 nav-item">
-              <Link to="/"><Gem size={16} /> Premium Picks</Link>
+              <Link to="/" className="d-flex align-items-center"><Gem size={16} className='mr-1' /> Premium Picks</Link>
             </li>
             <li className="list-inline-item mx-3 nav-item">
-              <Link to="/"><Gift size={16} /> Festivals/Deals</Link>
+              <Link to="/" className="d-flex align-items-center"><Gift size={16} className='mr-1'/> Festivals/Deals</Link>
             </li>
             <li className="list-inline-item mx-3 nav-item">
-              <Link to="/"><Eye size={16} /> Find Your Vibe</Link>
+              <Link to="/" className="d-flex align-items-center"><Eye size={16} className='mr-1'/> Find Your Vibe</Link>
             </li>
             <li className="list-inline-item mx-3 nav-item">
-              <Link to="/"><Phone size={16} /> Contact</Link>
+              <Link to="/" className="d-flex align-items-center"><Phone size={16} className='mr-1'/> Contact</Link>
             </li>
           </ul>
         </div>

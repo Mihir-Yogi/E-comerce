@@ -5,6 +5,9 @@ import React from "react";
 import ProductItem from "../../components/productItem";
 import HomeCat from "../../components/HomeCat";
 import Slider from "react-slick";
+import FeaturesSec from "../../components/Features";
+import FaqSection from "../../components/FAQs";
+
 const Home = () => {
     var productSliderOptions = {
         dots: true,
@@ -12,29 +15,30 @@ const Home = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     }
     return (
         <>
         <HomeBanner />
         <HomeCat />
         <section className="homeProducts ">
+                <div className="d-flex align-items-center justify-content-between" style={{padding: "0 5rem",paddingRight: "8rem"}}>
+                    <div className="info">
+                        <h3>BEST SELLERS</h3>
+                    </div>
+                    <Button className="viewAllBtn mb-2">
+                        View All <FiArrowRight />
+                    </Button>
+                </div>
             <div className="container-fluid px-5">
                 <div className="row">
-                    <div className="col-md-3 ps-md-4">
+                    <div className="col-md-3 ps-md-4  homebanner">
                         <div className="banner">
                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/banner-box.jpg" alt='IMAGE' className="img-fluid w-100 cursor" />
                         </div>
                     </div>
-                    <div className="col-md-9 ps-md-4">
-                        <div className="d-flex align-items-center justify-content-between">
-                            <div className="info">
-                                <h3>BEST SELLERS</h3>
-                                <p className="text-light text-sml mb-0">Do not miss the current offers until the end of March.</p>
-                            </div>
-                            <Button className="viewAllBtn">
-                                View All <FiArrowRight />
-                            </Button>
-                        </div>
+                    <div className="col-md-8 ps-md-4">
                         <div className="product_row w-100 mt-3">
                         
                         <Slider {...productSliderOptions}>
@@ -50,7 +54,8 @@ const Home = () => {
                         </Slider>
                         </div>
 
-                        <div className="d-flex align-items-center mt-5">
+                    </div>
+                        <div className="headingtitle d-flex align-items-center mt-5 w-100 justify-content-between">
                             <div className="info w-75">
                                 <h3 className="mb-0 hd">NEW PRODUCTS</h3>
                                 <p className="text-light text-sml mb-0">New Products with updated stocks</p>
@@ -60,7 +65,7 @@ const Home = () => {
                             </Button>
                         </div>
 
-                        <div className="product_row productRow2 w-100 mt-4 d-flex justify-content">
+                        <div className="product_row productRow2 w-100 mt-4 d-flex justify-content-center">
                             <ProductItem />
                             <ProductItem />
                             <ProductItem />
@@ -69,10 +74,23 @@ const Home = () => {
                             <ProductItem />
                             <ProductItem />
                             <ProductItem />
+                        <div className="d-flex mt-4 mb-5 bannerSec">
+                            <div className="banner">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-2.png" alt="banner2"/>
+                            </div>
+                            <div className="banner">
+                                <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-2.png" alt="banner2"/>
+                            </div>
                         </div>
-                    </div>
+                        </div>
+
                 </div>
             </div>
+        </section>
+
+        <FeaturesSec />
+        <section>
+            <FaqSection/>
         </section>
         </>
     )
