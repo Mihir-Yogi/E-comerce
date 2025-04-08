@@ -4,7 +4,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
 
-body{background-color: #f5f5f5;}
+body{background-color: #f5f5f5; overflow-x: hidden;}
 
 .bg-red{background: #000000;}
 
@@ -354,19 +354,55 @@ nav ul li a {
 .slick-next {
   right: -45px !important; /* ➡ Push right arrow further out */
 }
-
-.homeCat{
+.homeCat {
   padding: 35px 0px;
-} 
+}
 
-.homeCat .swiper .item{
+.homeCat .swiper {
+  overflow: inherit !important;
+}
+
+
+.homeCat .swiper .item {
   padding: 15px;
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.homeCat .swiper .item img{
+
+.homeCat .swiper .item img {
   width: 80%;
 }
 
+/* 👇 This is the main sauce for the arrows */
+.homeCat .swiper-button-prev,
+.homeCat .swiper-button-next {
+  top: -8%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  color: #333; /* arrow color */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 12px !important;
+  color: #3d3d3d; /* arrow color */
+}
+
+.homeCat .swiper-button-prev{right: 80px !important; left: inherit !important;}
+
+
+
 .hd{font-size: 20px; font-weight: 600; text-transform: uppercase;}
+
+.productRow2 {flex-wrap: wrap;}
+.productRow2 .productItem{width: 25%;overflow: hidden;}

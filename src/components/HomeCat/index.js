@@ -30,9 +30,9 @@ const HomeCat = () => {
     )
 
     return (
-    <section className="homeCat">
+    <section className="homeCat cat-container">
         <div className="container">
-        <h3 class="mb-4 hd">Featured Categories</h3> 
+        <h3 class="mb-3 hd">Featured Categories</h3> 
             <Swiper
                 slidesPerView={8}
                 spaceBetween={8}
