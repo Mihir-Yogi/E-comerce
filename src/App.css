@@ -404,5 +404,5 @@ nav ul li a {
 
 .hd{font-size: 20px; font-weight: 600; text-transform: uppercase;}
 
-.productRow2 {flex-wrap: wrap;}
-.productRow2 .productItem{width: 25%;overflow: hidden;}
+.productRow2 {flex-wrap: wrap;gap: 10px;}
+.productRow2 .productItem{width: 23%;overflow: hidden; border-right: 1px solid rgba(0,0,0,0.1) !important;}
