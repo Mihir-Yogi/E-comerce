@@ -6,22 +6,23 @@ const HomeBanner = () => {
      var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: "ease-in-out",
         arrows: false,
         adaptiveHeight: true,
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 3000
     } 
   return (
     <div className="homeBannerSection">
         <Slider {...settings}>
             <div className="item">
-                <img src={banner1} alt='banner1' className='w-100' />
+                <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-2.png&w=1080&q=100" alt='banner1' className='w-100' />
             </div>
             <div className="item">
-                <img src="https://cmsimages.shoppersstop.com/Watches_web_11814618d3/Watches_web_11814618d3.png" alt="Banner 1" className="w-100" />
+                <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-4.png&w=2048&q=100" alt="Banner 1" className="w-100" />
             </div>
         </Slider>
     </div>
