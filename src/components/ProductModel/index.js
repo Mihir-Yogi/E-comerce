@@ -66,13 +66,13 @@ const ProductModel = (props) => {
 
                     <Slider {...settings} className='zoomSlider' ref={zoomSlider}>
                             <div className='item'>
-                                <img src="https://www.inkhub.in/cdn/shop/files/karma-round.png?v=1724997569&width=900" className='w-100' onClick={() => goto(0)} />
+                                <img src="https://www.inkhub.in/cdn/shop/files/karma-round.png?v=1724997569&width=900" alt='' className='w-100' onClick={() => goto(0)} />
                             </div>
                         <div className='item'>
-                            <img src="https://www.inkhub.in/cdn/shop/files/Karmic-cycle.png?v=1719313128&width=900" className='w-100' onClick={() => goto(1)} />
+                            <img src="https://www.inkhub.in/cdn/shop/files/Karmic-cycle.png?v=1719313128&width=900" alt='' className='w-100' onClick={() => goto(1)} />
                         </div>
                         <div className='item'>
-                            <img src="https://www.inkhub.in/cdn/shop/files/How_to_apply_54.png?v=1724314476&width=900" className='w-100' onClick={() => goto(2)} />
+                            <img src="https://www.inkhub.in/cdn/shop/files/How_to_apply_54.png?v=1724314476&width=900" alt='' className='w-100' onClick={() => goto(2)} />
                         </div>
                     </Slider>
                 </div>

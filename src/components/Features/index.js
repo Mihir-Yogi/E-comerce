@@ -3,8 +3,6 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { GiHandWing } from "react-icons/gi";
 import { GiDramaMasks } from "react-icons/gi";
-import { HiOutlineGlobeAlt } from "react-icons/hi";
-import { GiSpiralLollipop } from "react-icons/gi";
 import { BsWatch } from "react-icons/bs";
 
 const FeaturesSec = () => {

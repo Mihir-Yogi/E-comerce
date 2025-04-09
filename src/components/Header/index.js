@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="container">
                         <div className="row">
                             <div className="logoWrapper d-flex align-items-center" style={{ marginRight: '10px' }}>
-                                <Link to={"/"}><img src={logo} alt="Logo" /></Link>
+                                <Link to={"/"}><img src={logo} alt="" /></Link>
                             </div>
 
                             <div className="col-sm-10 d-flex align-items-center part2">

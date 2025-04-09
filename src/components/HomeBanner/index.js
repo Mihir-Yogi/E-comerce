@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-import banner1 from "../../assets/banners/banner1.png";
 
 const HomeBanner = () => {
      var settings = {
@@ -19,10 +18,10 @@ const HomeBanner = () => {
     <div className="homeBannerSection">
         <Slider {...settings}>
             <div className="item">
-                <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-2.png&w=1080&q=100" alt='banner1' className='w-100' />
+                <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-2.png&w=1080&q=100" alt='' className='w-100' />
             </div>
             <div className="item">
-                <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-4.png&w=2048&q=100" alt="Banner 1" className="w-100" />
+                <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-4.png&w=2048&q=100" alt="" className="w-100" />
             </div>
         </Slider>
     </div>

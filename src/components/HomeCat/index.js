@@ -6,7 +6,7 @@ import 'swiper/css'
 
 const HomeCat = () => {
 
-    const [itemBg, setItemBg] = React.useState(
+    const [itemBg] = React.useState(
         [
             '#fffceb',
             '#ecffec',
@@ -42,11 +42,11 @@ const HomeCat = () => {
                 className="mySwiper"
                 >
                 {
-                    itemBg?.map((itemBg,index) => {
+                    itemBg?.map((itemBg) => {
                         return (
                             <SwiperSlide>
                                 <div className="item text-center cursor" style={{background: itemBg}}>
-                                    <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt='IMAGE'/>
+                                    <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png' alt=''/>
                                     <h4>Item</h4>
                                     <p>10 Products</p>
                                 </div>

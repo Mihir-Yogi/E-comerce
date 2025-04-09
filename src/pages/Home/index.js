@@ -35,7 +35,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-md-3 ps-md-4  homebanner">
                         <div className="banner">
-                            <img src="https://www.inkbolt.in/_next/image?url=%2Fmission%2Four-mission.png&w=640&q=75" alt='IMAGE' className="img-fluid w-100 cursor" />
+                            <img src="https://www.inkbolt.in/_next/image?url=%2Fmission%2Four-mission.png&w=640&q=75" alt='' className="img-fluid w-100 cursor" />
                         </div>
                     </div>
                     <div className="col-md-8 ps-md-4">
@@ -76,10 +76,10 @@ const Home = () => {
                             <ProductItem />
                         <div className="d-flex mt-4 mb-5 bannerSec">
                             <div className="banner">
-                                <img src="https://www.easytatt.com.au/cdn/shop/files/semi-permanent_tattoos_882619a7-6dad-4a13-92db-4357c65b7396_720x.jpg?v=1658976432" alt="banner2"/>
+                                <img src="https://www.easytatt.com.au/cdn/shop/files/semi-permanent_tattoos_882619a7-6dad-4a13-92db-4357c65b7396_720x.jpg?v=1658976432" alt=""/>
                             </div>
                             <div className="banner">
-                                <img src="https://www.easytatt.com.au/cdn/shop/files/long_lasting_temporary_tattoo_d75b7dfb-8932-4aa8-9f7d-734b8d10c4d1_720x.jpg?v=1658972967" alt="banner2"/>
+                                <img src="https://www.easytatt.com.au/cdn/shop/files/long_lasting_temporary_tattoo_d75b7dfb-8932-4aa8-9f7d-734b8d10c4d1_720x.jpg?v=1658972967" alt=""/>
                             </div>
                         </div>
                         </div>

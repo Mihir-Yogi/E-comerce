@@ -35,11 +35,11 @@ const Footer = () => {
             InkX <span className="sub-logo">TATTOOS</span>
           </h2>
             <ul className="footer-links">
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Shipping Policy</a></li>
-                <li><a href="#">Refund Policy</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="/">Contact Us</a></li>
+                <li><a href="/">Shipping Policy</a></li>
+                <li><a href="/">Refund Policy</a></li>
+                <li><a href="/">Privacy Policy</a></li>
+                <li><a href="/">Terms of Service</a></li>
             </ul>
         </div>
 

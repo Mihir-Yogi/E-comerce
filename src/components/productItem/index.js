@@ -19,7 +19,7 @@ const ProductItem = () => {
         <div className="item productItem">
             <div className="imgWrapper">
                 <div className="imgWrapperInner">
-                    <img src="https://www.inkbolt.in/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0672%2F0474%2F3306%2Ffiles%2Fdownload_cfdf3cc1-989c-4863-9561-8f1e6cce3286.jpg%3Fv%3D1744101857&w=256&q=100" alt='IMAGE' className="w-100" />
+                    <img src="https://www.inkbolt.in/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0672%2F0474%2F3306%2Ffiles%2Fdownload_cfdf3cc1-989c-4863-9561-8f1e6cce3286.jpg%3Fv%3D1744101857&w=256&q=100" alt='' className="w-100" />
                     <span className="badge badge-primary">28%</span>
                 </div>
                 <div className="actionsquickView"  onClick={()=>viewProductDetails(1)}>
