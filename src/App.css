@@ -15,7 +15,7 @@ body{background-color: #f5f5f5; overflow-x: hidden;}
 
 .headerWraapper .header{width: 100%; height: auto; padding: 15px 0px;}
 .logoWrapper img {
-    width: 100%;
+    width: 151%;
     max-width: 80px;  /* Control size */
     height: auto;
     object-fit: contain;

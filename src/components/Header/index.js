@@ -18,17 +18,17 @@ const Header = () => {
 
             <header className="header">
                     <div className="container">
-                        <div className="row">
+                        <div className="row justify-content-center">
+                            <div className="col-sm-10 mt-3 d-flex align-items-center part2">
+
                             <div className="logoWrapper d-flex align-items-center" style={{ marginRight: '10px' }}>
                                 <Link to={"/"}><img src={logo} alt="" /></Link>
                             </div>
-
-                            <div className="col-sm-10 d-flex align-items-center part2">
                                 {/* Header Search starts here */}
                                     <SearchBox/>
                                 {/* Header Search End here */}
 
-                                <div className="part3 d-flex align-items-center ml-auto">
+                                <div className="part3 d-flex align-items-center ml-auto" style={{gap: "10px"}}>
                                     <div className='ml-auto cartTab'>
                                         <div className='postition-relative  ml-2'>
                                             <Button className='circle'><IoBagOutline/></Button>
