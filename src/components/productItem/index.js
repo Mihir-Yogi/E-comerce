@@ -1,16 +1,28 @@
 import Rating from '@mui/material/Rating';
 import { IoMdHeartEmpty } from "react-icons/io";
 import { Button } from "@mui/material";
+import ProductModel from '../ProductModel';
+import { useState } from 'react';
 
 const ProductItem = () => {
+
+    const [isOpenProductModel, setIsOpenProductModel] = useState(false);
+    const viewProductDetails = (id) => {
+        setIsOpenProductModel(true);
+    }
+
+    const closeProductModal = () => {
+        setIsOpenProductModel(false);
+    }
     return (
+        <>
         <div className="item productItem">
             <div className="imgWrapper">
                 <div className="imgWrapperInner">
                     <img src="https://cmsimages.shoppersstop.com/Only_web_622bbd1f03/Only_web_622bbd1f03.png" alt='IMAGE' className="w-100" />
                     <span className="badge badge-primary">28%</span>
                 </div>
-                <div className="actionsquickView">
+                <div className="actionsquickView"  onClick={()=>viewProductDetails(1)}>
                     <Button style={{color: 'white'}}><span>Quick View</span></Button>
                 </div>
                 <div className='actions'>
@@ -27,7 +39,13 @@ const ProductItem = () => {
                 </div>
             </div>
         </div>
+
+        {
+            isOpenProductModel === true && <ProductModel closeProductModal={closeProductModal}/>
+        }
+
         
+        </>
     )
 }
 
