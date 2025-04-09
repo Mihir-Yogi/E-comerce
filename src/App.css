@@ -57,7 +57,7 @@ header .part3 .circle svg{font-size: 22px;}
 .cartTab button{background: #c1c1c1 !important;}
 .cartTab button svg{color: #000000 !important; font-size: 22px !important;}
 
-.cartTab .count{position: absolute; top: 10px; right: 60px; background: #ea2b0f; border-radius: 50%; color: #fff; width: 25px; height: 25px;}
+.cartTab .count{position: absolute; top: 60px; right: 300px; background: #ea2b0f; border-radius: 50%; color: #fff; width: 25px; height: 25px;}
 nav ul li a {
     font-size: 16px;
     font-weight: 500;
