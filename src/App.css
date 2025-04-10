@@ -472,7 +472,7 @@ nav ul li a {
 
 .productRow2 {flex-wrap: wrap;gap: 10px;}
 .productRow2 .productItem{width: 24%;overflow: hidden; border-right: 1px solid rgba(0,0,0,0.1) !important;}
-.headingtitle{font-size: 20px; font-weight: 600; text-transform: uppercase; margin: 50px;margin-bottom: 5px !important;}
+.headingtitle{font-size: 20px; font-weight: 600; text-transform: uppercase;margin-bottom: 5px !important;  padding: 0 2rem;}
 .productRow2 .productItem{border-radius: 10px;transition: transform 0.3s ease, box-shadow 0.3s ease;;}
 .productRow2 .productItem:hover{ box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);}
 
@@ -760,6 +760,10 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   font-size: 20px !important;
 }
 
+.product-section-header{
+  padding: 0 4rem; /* Adjust as needed for bigger/smaller padding */
+}
+
 
 /* Phones (up to 600px) */
 @media (max-width: 576px) {
@@ -783,6 +787,10 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   }
   .logoWrapper img {
     max-width: 100px; /* make logo smaller on phones */
+  }
+
+  .product-section-header{
+    margin: 5px !important;
   }
 
   header .headerSearch {
@@ -850,4 +858,46 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   .homeCat .swiper-button-prev{right: 60px !important; left: inherit !important;}
   .homebanner{display: none;}
 
+  .productItem {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .productItem .imgWrapperInner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .productItem .info {
+    font-size: 14px;
+  }
+  
+  .productItem .info h4 {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .productItem .oldPrice,
+  .productItem .netPrice {
+    font-size: 14px;
+  }
+  .product-section-header {
+    padding: 0 1rem !important;
+  }
+
+  .product-section-header .info h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .product-section-header .viewAllBtn {
+    margin-bottom: 0px !important;
+  }
 } 
+
+

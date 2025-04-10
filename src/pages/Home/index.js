@@ -1,7 +1,7 @@
 import HomeBanner from "../../components/HomeBanner";
 import { Button } from "@mui/material";
 import { FiArrowRight } from 'react-icons/fi';
-import React from "react";
+import React, { lazy } from "react";
 import ProductItem from "../../components/productItem";
 import HomeCat from "../../components/HomeCat";
 import Slider from "react-slick";
@@ -10,27 +10,48 @@ import FaqSection from "../../components/FAQs";
 
 const Home = () => {
     var productSliderOptions = {
-        dots: true,
+            dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        lazyLoad: true,
+        responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1.2
+            }
+        }
+    ]
     }
     return (
         <>
         <HomeBanner />
         <HomeCat />
         <section className="homeProducts ">
-                <div className="d-flex align-items-center justify-content-between" style={{padding: "0 5rem",paddingRight: "8rem"}}>
-                    <div className="info">
-                        <h3>BEST SELLERS</h3>
-                    </div>
-                    <Button className="viewAllBtn mb-2">
-                        View All <FiArrowRight />
-                    </Button>
+            <div className="product-section-header d-flex align-items-center justify-content-between">
+                <div className="info">
+                    <h3>BEST SELLERS</h3>
                 </div>
+                <Button className="viewAllBtn mb-2">
+                    View All <FiArrowRight />
+                </Button>
+            </div>
             <div className="container-fluid px-5">
                 <div className="row">
                     <div className="col-md-3 ps-md-4  homebanner">
