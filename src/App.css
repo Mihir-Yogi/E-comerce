@@ -759,3 +759,72 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
 .leaf{
   font-size: 20px !important;
 }
+
+
+/* Phones (up to 600px) */
+@media (max-width: 576px) {
+  .part2 {
+    align-items: center !important;
+    gap: 1rem;
+  }
+
+  .part3 {
+    margin-left: 0 !important;
+    align-self: center;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .logoWrapper{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .logoWrapper img {
+    max-width: 100px; /* make logo smaller on phones */
+  }
+
+  header .headerSearch {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 44px; /* Slim height */
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  header .headerSearch input {
+    font-size: 14px;
+    height: 36px; /* SLIM */
+    padding: 0px 12px;
+    border-radius: 6px;
+  }
+
+  header .headerSearch button {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 110px;
+    width: 28px !important;
+    height: 28px !important;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  header .headerSearch button svg {
+    font-size: 18px;
+  }
+
+  .cartTab .count{
+    top: 70px;
+    right: 59px;
+  }
+
+  .nav-wrapper .container{
+    justify-content: space-between !important;
+  }
+}
