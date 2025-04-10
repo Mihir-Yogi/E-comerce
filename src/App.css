@@ -848,4 +848,6 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   }
   
   .homeCat .swiper-button-prev{right: 60px !important; left: inherit !important;}
+  .homebanner{display: none;}
+
 } 
