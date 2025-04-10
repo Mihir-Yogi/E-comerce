@@ -37,7 +37,7 @@ const Navigation = () => {
                       zIndex: 999,
                     }}
                   >
-                    <Link to="/error" className="d-block py-1 px-2">Blaze Born</Link>
+                    <Link to="/" className="d-block py-1 px-2">Blaze Born</Link>
                     <Link to="/" className="d-block py-1 px-2">Phoenix Fade</Link>
                     <Link to="/" className="d-block py-1 px-2">Inkferno</Link>
                   </motion.div>
@@ -89,22 +89,22 @@ const Navigation = () => {
             className="mobile-side-nav position-fixed top-0 end-0 h-100 bg-white shadow p-4 d-md-none"
             style={{ width: '250px', zIndex: 1000 }}
           >
-            <button className="btn mb-3" onClick={() => setSideNavOpen(false)}>
+            <button className="btn mb-3" onClick={() => {setTimeout(() => setSideNavOpen(false), 100);}}>
               <X />
             </button>
             <ul className="list-unstyled">
               <li className="mb-3">
-                <Link to="/" className="d-flex align-items-center">
+                <Link to="/" className="d-flex align-items-center underline-animate" onClick={() => setSideNavOpen(false)}>
                   <Gift size={16} className="me-2" /> Festivals/Deals
                 </Link>
               </li>
               <li className="mb-3">
-                <Link to="/" className="d-flex align-items-center">
+                <Link to="/" className="d-flex align-items-center underline-animate" onClick={() => setSideNavOpen(false)}>
                   <Eye size={16} className="me-2" /> Find Your Vibe
                 </Link>
               </li>
               <li>
-                <Link to="/" className="d-flex align-items-center">
+                <Link to="/" className="d-flex align-items-center underline-animate" onClick={() => setSideNavOpen(false)}>
                   <Phone size={16} className="me-2" /> Contact
                 </Link>
               </li>
