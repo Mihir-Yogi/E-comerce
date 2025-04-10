@@ -464,7 +464,7 @@ nav ul li a {
   color: #3d3d3d; /* arrow color */
 }
 
-.homeCat .swiper-button-prev{right: 80px !important; left: inherit !important;}
+.homeCat .swiper-button-prev{right: 80px ; left: inherit !important;}
 
 
 
@@ -847,4 +847,5 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
     width: 100%;
   }
   
+  .homeCat .swiper-button-prev{right: 60px !important; left: inherit !important;}
 } 

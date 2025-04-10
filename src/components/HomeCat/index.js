@@ -33,14 +33,30 @@ const HomeCat = () => {
     <section className="homeCat cat-container">
         <div className="container">
         <h3 class="mb-3 hd">Featured Categories</h3> 
-            <Swiper
-                slidesPerView={8}
-                spaceBetween={8}
-                navigation={true}
-                slidesPerGroup={1}
-                modules={[Navigation]}
-                className="mySwiper"
-                >
+        <Swiper
+  spaceBetween={8}
+  navigation={true}
+  slidesPerGroup={1}
+  modules={[Navigation]}
+  className="mySwiper"
+  breakpoints={{
+    0: {
+      slidesPerView: 2.2, // mobile
+    },
+    480: {
+      slidesPerView: 3.5, // small phones / large mobiles
+    },
+    768: {
+      slidesPerView: 5, // tablets
+    },
+    1024: {
+      slidesPerView: 6, // small desktops
+    },
+    1280: {
+      slidesPerView: 8, // full desktop
+    },
+  }}
+>
                 {
                     itemBg?.map((itemBg) => {
                         return (
