@@ -898,6 +898,110 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   .product-section-header .viewAllBtn {
     margin-bottom: 0px !important;
   }
+
+  .headingtitle .viewAllBtn{
+    display: none ;
+  }
+
+  .headingtitle .info{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  .productRow2 .productItem{width: 48%;}
+  
+  .info {
+    margin-left: 0px !important;
+}
+.productItem .imgWrapper .imgWrapperInner {
+  width: 100%;
+  height: 250px !important;
+}
+.viewAllBtnBottom{
+  display: block !important;
+  margin: 0 auto !important;
+  padding: 3px 30px !important;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Sexy gradient */
+  border: none !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 8px 16px rgba(255, 75, 43, 0.3);
+  transition: all 0.3s ease;
+}
+
+.bannerSec{
+  margin-bottom: 0px !important;
+  height: 300px;
+}
+
+.viewAllBtnBottom{
+  display: none;
+}
+.effortless-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 0px !important;
+  flex-direction: column !important;
+}
+
+.image-stack img {
+  display: none;
+}
+
+.text-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+.text-content {
+  width: 100%;
+  padding: 10px !important;
+}
+
+.text-content h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+.feature-semitext{
+  display: flex;
+  margin-bottom: -15px !important;
+}
+.feature-icon-mobile{
+  display: block !important;
+  font-size: 30px;
+  color: #233a95;
+  margin-left: 8px;
+  margin-top: -5px;
+}
+.feature-icon{
+  display: none;
+}
+
+.cartTab {
+  position: relative; /* THIS is key! Creates positioning context */
+}
+
+.cartTab .count {
+  position: absolute;
+  top: 0; /* Adjust as needed */
+  right: -5px; /* Adjust as needed */
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  z-index: 2;
+}
 } 
 
 
+.feature-icon-mobile{
+  display: none;
+}

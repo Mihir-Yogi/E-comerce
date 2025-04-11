@@ -76,8 +76,12 @@ const Home = () => {
                         </div>
 
                     </div>
+
+                    
+                </div>
+            </div>
                         <div className="headingtitle d-flex align-items-center mt-5 w-100 justify-content-between">
-                            <div className="info w-75">
+                            <div className="info w-75 ">
                                 <h3 className="mb-0 hd">NEW PRODUCTS</h3>
                                 <p className="text-light text-sml mb-0">New Products with updated stocks</p>
                             </div>
@@ -85,6 +89,9 @@ const Home = () => {
                                 View All <FiArrowRight />
                             </Button>
                         </div>
+                        
+                <div className="container-fluid">
+                    <div className="row">
 
                         <div className="product_row productRow2 w-100 mt-4 d-flex justify-content-center">
                             <ProductItem />
@@ -95,6 +102,11 @@ const Home = () => {
                             <ProductItem />
                             <ProductItem />
                             <ProductItem />
+                        <div className="viewAllBtnBottom">
+                            <Button className="viewAllBtn" style={{width: "200px"}}>
+                                View All <FiArrowRight />
+                            </Button>
+                        </div>
                         <div className="d-flex mt-4 mb-5 bannerSec">
                             <div className="banner">
                                 <img src="https://www.easytatt.com.au/cdn/shop/files/semi-permanent_tattoos_882619a7-6dad-4a13-92db-4357c65b7396_720x.jpg?v=1658976432" alt=""/>
@@ -104,9 +116,8 @@ const Home = () => {
                             </div>
                         </div>
                         </div>
-
+                    </div>
                 </div>
-            </div>
         </section>
 
         <FeaturesSec />

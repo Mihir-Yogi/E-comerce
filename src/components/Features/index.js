@@ -23,24 +23,24 @@ const FeaturesSec = () => {
         <ul className="features-list">
           <li className="d-flex align-items-center">
           <GiHandWing className="feature-icon"/>
-            <div>
-            <strong> 1. SEAMLESS EXPERIENCE</strong>
+            <div className="feature-text">
+            <strong className="feature-semitext"> 1. SEAMLESS EXPERIENCE <GiHandWing className="feature-icon-mobile"/></strong>
             <br />
             Enjoy smooth, hassle-free application and removal. No complications — just clean, elegant results.
             </div>
           </li>
           <li className="d-flex align-items-center">
             <GiDramaMasks className="feature-icon"/>
-            <div>
-            <strong>2. MEANINGFUL, YET TEMPORARY</strong>
+            <div className="feature-text">
+            <strong className="feature-semitext">2. MEANINGFUL, YET TEMPORARY  <GiDramaMasks className="feature-icon-mobile"/></strong>
             <br />
             Express yourself with confidence. Our designs let you explore your identity without permanent commitment.
             </div>
           </li>
           <li className="d-flex align-items-center">
             <BsWatch className="feature-icon"/>
-            <div>
-            <strong>3. TIMELESS DESIGNS</strong>
+            <div className="feature-text">
+            <strong className="feature-semitext">3. TIMELESS DESIGNS <BsWatch className="feature-icon-mobile" /></strong>
             <br />
             Our curated collection features refined, eye-catching artwork made to complement every style — subtle, bold, or in between.
             </div>
