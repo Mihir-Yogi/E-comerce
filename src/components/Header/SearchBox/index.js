@@ -19,14 +19,14 @@ import { TbDropletSearch } from "react-icons/tb";
 
 const SearchBox = () => {
   const placeholders = [
-    "Find ink 💧",
-    "Try 'dragon'",
-    "Top ink 🔥",
-    "Floral 🌸",
-    "Bold looks 😎",
-    "New drop 💥",
-    "Tattoo sets",
-    "Quick pick →"
+    { text: "Find ink "},
+    { text: "Try 'dragon' " },
+    { text: "Top ink " },
+    { text: "Floral " },
+    { text: "Bold looks " },
+    { text: "New drop " },
+    { text: "Tattoo sets " },
+    { text: "Quick pick " }
   ];
 
   const usePlaceholderTyping = (speed = 100, delay = 1500) => {
@@ -38,7 +38,7 @@ const SearchBox = () => {
     useEffect(() => {
       const current = placeholders[index];
 
-      if (!reverse && subIndex === current.length) {
+      if (!reverse && subIndex === current.text.length){
         setTimeout(() => setReverse(true), delay);
         return;
       }
@@ -52,7 +52,7 @@ const SearchBox = () => {
         setSubIndex((prev) => prev + (reverse ? -1 : 1));
       }, reverse ? speed / 2 : speed);
 
-      setPlaceholder(current.substring(0, subIndex));
+      setPlaceholder(current.text.substring(0, subIndex));
       return () => clearTimeout(timeout);
     }, [subIndex, index, reverse]);
 

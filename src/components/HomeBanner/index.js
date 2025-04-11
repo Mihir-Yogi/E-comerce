@@ -16,6 +16,14 @@ const HomeBanner = () => {
     } 
   return (
     <div className="homeBannerSection">
+        <div className="top-strip">
+          <div className="scroll-container">
+            <div className="scroll-text">
+              <span>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay.</span>
+              <span>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay.</span>
+            </div>
+          </div>
+        </div>
         <Slider {...settings}>
             <div className="item">
                 <img src="https://www.inkbolt.in/_next/image?url=%2Fheros%2Fheronew-2.png&w=1080&q=100" alt='' className='w-100' />

@@ -8,7 +8,7 @@ const Navigation = () => {
   const [sideNavOpen, setSideNavOpen] = useState(false);
 
   return (
-    <nav className="nav-wrapper py-4" onMouseLeave={() => setDropdownOpen(false)}>
+    <nav className="nav-wrapper py-3" onMouseLeave={() => setDropdownOpen(false)}>
       <div className="container">
         <div className="d-flex centerdiv justify-content-center align-items-center">
           

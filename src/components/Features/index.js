@@ -46,7 +46,7 @@ const FeaturesSec = () => {
             </div>
           </li>
         </ul>
-        <Button className="shop-btn">
+        <Button className="shop-btn blink">
           Shop Now <FiArrowRight className="ms-2" />
         </Button>
       </div>
