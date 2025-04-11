@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer";
+import Listing from "./pages/Listing";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Header/>
       <Routes>
         <Route path="/" exact={true} element={<Home/>} />
+        <Route path="/cat/:id" exact={true} element={<Listing/>} />
       </Routes>
     <Footer/>
     </BrowserRouter>

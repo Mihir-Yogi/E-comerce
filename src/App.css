@@ -9,43 +9,6 @@
 body{background-color: #f5f5f5; overflow-x: hidden;}
 
 .bg-red{background: #000000;}
-
-.top-strip {
-  background-color: #e0ddd5;
-  color: #2c2c2c;
-  font-weight: 500;
-  font-size: 14px;
-  border-bottom: 1px solid #ccc;
-  padding: 8px 0;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.scroll-container {
-  overflow: hidden;
-  position: relative;
-}
-
-.scroll-text {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-left 15s linear infinite;
-}
-
-.scroll-text span {
-  display: inline-block;
-  padding-right: 50px; /* small gap between repeats */
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 .headerWraapper .header{width: 100%; height: auto; padding: 15px 0px;}
 .logoWrapper img {
     width: 151%;
@@ -1049,7 +1012,75 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   left: 5%;
   right: 5%;
 }
+.mobile-only {
+  display: block !important;
+}
+
+.desktop-only {
+  display: none !important;
+}
+
 } 
+
+.static-strip p{
+  margin-bottom: 0rem !important;
+}
+
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+
+/* Base styles */
+.top-strip {
+  background-color: #e8e6df;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+/* MOBILE SCROLLING */
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 12s linear infinite;
+}
+
+.scroll-text span {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* DESKTOP STATIC CENTER TEXT */
+.static-strip {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 
 .feature-icon-mobile{
@@ -1062,4 +1093,55 @@ footer .topInfo{border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20p
   padding: 8px 12px;
   font-size: 14px;
   border-radius: 10px;
+}
+
+
+
+/* Listing Page Style */
+
+/* .product_listing_page{padding: 35px 0px;} */
+.product_listing_page .product_listing{gap:20px !important;}
+.product_listing_page .product_listing .sidebar{width: 20%; flex: 0 0 20%;}
+.product_listing_page .product_listing .content_right{width: 80%; flex: 0 0 80%;}
+.product_listing_page .product_listing .sidebar .filterBox{margin-bottom: 35px !important;}
+.product_listing_page .product_listing .sidebar .filterBox h6{font-weight: 700; font-size: 40px; margin-bottom: 15px !important;}
+.product_listing_page .product_listing .sidebar .scroll ul li{list-style: none;margin-bottom: 0px; width: 100%;}
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root{padding: 2px !important;}
+.css-rizt0-MuiTypography-root{font-size: 13px !important;}
+.css-1umw9bq-MuiSvgIcon-root{width: 20px !important; height: 20px !important;}
+
+.product_listing_page .product_listing .sidebar .scroll{max-height: 200px;overflow-y: scroll; overflow-x: hidden !important;padding-right: 5px;}
+.product_listing_page .product_listing .sidebar .scroll::-webkit-scrollbar{width: 5px !important; height: 5px !important;}
+
+
+.product_listing_page .product_listing .sidebar .scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.product_listing_page .product_listing .sidebar .scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 10px;
+}
+
+.product_listing_page .product_listing .sidebar .scroll::-webkit-scrollbar-thumb {
+  background: #007bff; /* Your blue accent */
+  border-radius: 10px;
+}
+
+.product_listing_page .product_listing .sidebar .scroll::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+.pb-2 {
+  padding-bottom: .5rem !important;
+  gap: 20px;
+}
+
+/* .range-slider .range-slider__thumb{background: #663725 !important;}
+.range-slider .range-slider__range{background: #663725 !important;} */
+
+.range-slider .range-slider__thumb{width: 15px !important; height: 15px !important;}
+.range-slider .range-slider__range{height: 5px !important;}
+
+.filterBox dl, ol, ul {
+  padding-left: 10px !important;
 }

@@ -17,11 +17,17 @@ const HomeBanner = () => {
   return (
     <div className="homeBannerSection">
         <div className="top-strip">
-          <div className="scroll-container">
+          {/* Mobile Scrolling Text */}
+          <div className="scroll-container mobile-only">
             <div className="scroll-text">
               <span>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay.</span>
               <span>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay.</span>
             </div>
+          </div>
+          
+          {/* Desktop Static Text */}
+          <div className="static-strip desktop-only">
+            <p>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay.</p>
           </div>
         </div>
         <Slider {...settings}>
