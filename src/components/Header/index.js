@@ -24,7 +24,7 @@ const Header = () => {
 
                                 <div className="part3 d-flex align-items-center ml-auto" style={{gap: "10px"}}>
                                     <div className='ml-auto cartTab'>
-                                        <div className='postition-relative  ml-2'>
+                                        <div className='position-relative ml-2'>
                                             <Button className='circle'><IoBagOutline/></Button>
                                             <span className='count d-flex align-items-center justify-content-center'>1</span>
                                         </div>

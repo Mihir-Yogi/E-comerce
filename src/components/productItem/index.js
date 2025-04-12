@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import ProductModel from '../ProductModel';
 import { useState } from 'react';
 
-const ProductItem = () => {
+const ProductItem = (props) => {
 
     const [isOpenProductModel, setIsOpenProductModel] = useState(false);
     const viewProductDetails = (id) => {
@@ -16,7 +16,7 @@ const ProductItem = () => {
     }
     return (
         <>
-        <div className="item productItem">
+        <div className={`item productItem ${props.itemView}`}>
             <div className="imgWrapper">
                 <div className="imgWrapperInner">
                     <img src="https://www.inkbolt.in/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0672%2F0474%2F3306%2Ffiles%2Fdownload_cfdf3cc1-989c-4863-9561-8f1e6cce3286.jpg%3Fv%3D1744101857&w=256&q=100" alt='' className="w-100" />
@@ -36,6 +36,9 @@ const ProductItem = () => {
                 <div className="d-flex">
                     <span className="oldPrice">$20.00</span>
                     <span className="netPrice text-danger ml-3">$15.00</span>
+                </div>
+                <div className='align-items-center mt-2 addtocart'>
+                    <Button className='btn-blue btn-lg btn-big'>Add to Cart</Button>
                 </div>
             </div>
         </div>

@@ -10,7 +10,8 @@ const Sidebar = () => {
     const [value2, setValue2] = useState(0);
     return(
         <div className="sidebar">
-            <div className="filterBox">
+            <div className="sticky">
+                <div className="filterBox">
                 <h5>PRODUCT CATEGORIES</h5>
                 <div className="scroll">
                     <ul>
@@ -106,9 +107,9 @@ const Sidebar = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
+                </div>
 
-            <div className="filterBox mr-2">
+                <div className="filterBox mr-2">
                 <h5>FILTER BY PRICE</h5>
 
                 <RangeSlider value={value} onInput={setValue} min={100} max={60000} step={5} />
@@ -117,9 +118,9 @@ const Sidebar = () => {
                     <span>From: <strong className="text-dark"> Rs: {value[0]}</strong></span>
                     <span className="ml-auto">From: <strong className="text-dark"> Rs: {value[1]}</strong></span>
                 </div>
-            </div>
+                </div>
 
-            <div className="filterBox">
+                <div className="filterBox">
                 <h5>PRODUCT STATUS</h5>
                 <div className="scroll">
                     <ul>
@@ -130,6 +131,7 @@ const Sidebar = () => {
                             <FormControlLabel className="w-100" control={<Checkbox defaultChecked/>} label="ON SALE"/>
                         </li>
                     </ul>
+                </div>
                 </div>
             </div>
         </div>
